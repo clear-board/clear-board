@@ -43,7 +43,8 @@ class ImageFeed:
             frame_buffer_names = [f'frame buffer {i}' for i in range(len(frame_buffers))]
         self.frame_buffer_names = frame_buffer_names
         self.windows = [f'{frame_buffer_name} masked' for frame_buffer_name in frame_buffer_names] + \
-            [f'{frame_buffer_name} committed' for frame_buffer_name in frame_buffer_names]
+            [f'{frame_buffer_name} committed' for frame_buffer_name in frame_buffer_names] + \
+            [f'{frame_buffer_name} final' for frame_buffer_name in frame_buffer_names]
         self.verbose = verbose
 
     def _start_feed(self):
