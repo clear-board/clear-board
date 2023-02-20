@@ -141,7 +141,7 @@ class FrameBuffer:
         ratio = distance_to_background / distance_to_foreground
 
         commited = torch.logical_and(torch.logical_not(mask), torch.logical_or(ratio<1, difference<10))
-        # commited = torch.logical_not(mask)
+        commited = torch.logical_not(mask)
         # Commiting the background
         self.committed_frame[:,commited] = self.frame_buffer[self.cur_frame][:,commited]
         # Add semi-transparent obstacles
