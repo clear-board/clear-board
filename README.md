@@ -27,6 +27,7 @@ Contributors: [WenXin Dong](https://github.com/WenXinDong2018), [Daniel Huang](h
   - [2. Environment setup](#2-environment-setup)
   - [3. Run basic examples](#3-run-basic-examples)
   - [4. Links](#4-links)
+  - [5. TODO List](#5-todo-list)
 
 <!-- /code_chunk_output -->
 ## 1. Project Description
@@ -89,3 +90,12 @@ sh terry_tao_feed.sh
 ## 4. Links
 
 [Reference Video](https://www.youtube.com/watch?v=pp06oGD4m00)
+
+
+## 5. TODO List
+
+- [ ] Utilize off-the-shelf segmentation models at lower frequency to get more accurate ground truth object detection
+  - Do more processing on first frame to understand what are good commits and what are not
+  - Use color-based expansion or edge detection to identify object moving bounds
+- [ ] Color space metrics improvements (instead of naive RGB)
+- [ ] Noise reduction in masking
